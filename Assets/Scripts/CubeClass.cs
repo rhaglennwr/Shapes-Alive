@@ -1,15 +1,14 @@
-using System.IO;
-
 public class CubeClass : ShapeClass
 {
+    public new string Shape { get; set; }
+    
     public CubeClass()
     {
-        shape = "Cube";
-        //Debug.Log("You clicked on Cube!");
+        Shape = "Cube";
     }
 
     public CubeClass(string newShape) : base(newShape)
     {
-        //shape = "Cube";
+        Shape = "Cube";
     }
 }

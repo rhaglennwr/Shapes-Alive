@@ -1,13 +1,14 @@
 public class CapsuleClass : ShapeClass
 {
+    public new string Shape { get; set; }
+    
     public CapsuleClass()
     {
-        shape = "Capsule";
-        //Debug.Log("You clicked on Cube!");
+        Shape = "Capsule";
     }
 
     public CapsuleClass(string newShape) : base(newShape)
     {
-        //shape = "Capsule";
+        Shape = "Capsule";
     }
 }

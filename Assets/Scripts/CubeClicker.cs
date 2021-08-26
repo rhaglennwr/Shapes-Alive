@@ -12,5 +12,6 @@ public class CubeClicker : MonoBehaviour
         if (hit.transform.name != "Cube") return;
         var cubeClass = new CubeClass();
         cubeClass = new CubeClass("Cube");
+        cubeClass.Shape = "Cube";
     }
 }

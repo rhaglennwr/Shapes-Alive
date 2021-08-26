@@ -3,17 +3,16 @@ using UnityEngine;
 //Parent class.
 public class ShapeClass
 {
-    protected string shape;
+    private readonly string Shape;
 
     protected ShapeClass()
     {
-        shape = "blob";
-        //Debug.Log("ShapeClass with no parameters is called.");
+        Shape = "Blob";
     }
 
     protected ShapeClass(string newShape)
     {
-        shape = newShape;
-        Debug.Log("ShapeClass with string parameter " + shape + " is called.");
+        Shape = newShape;
+        Debug.Log("ShapeClass with string parameter " + Shape + " is called.");
     }
 }

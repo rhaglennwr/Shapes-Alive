@@ -1,13 +1,14 @@
 public class SphereClass : ShapeClass 
 {
+    public new string Shape { get; set; }
+    
     public SphereClass()
     {
-        shape = "Sphere";
-        //Debug.Log("You clicked on Cube!");
+        Shape = "Sphere";
     }
 
     public SphereClass(string newShape) : base(newShape)
     {
-        //shape = "Sphere";
+        Shape = "Sphere";
     }
 }
