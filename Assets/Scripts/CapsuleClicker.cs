@@ -10,7 +10,9 @@ public class CapsuleClicker : MonoBehaviour
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         if (!Physics.Raycast(ray, out var hit)) return;
         if (hit.transform.name != "Capsule") return;
-        var capsuleClass = new CapsuleClass();
-        capsuleClass = new CapsuleClass("Capsule");
+        var capsuleClass = new CapsuleClass("Capsule")
+        {
+            Shape = "Capsule"
+        };
     }
 }

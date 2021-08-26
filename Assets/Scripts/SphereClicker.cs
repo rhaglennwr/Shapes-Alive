@@ -10,7 +10,9 @@ public class SphereClicker : MonoBehaviour
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         if (!Physics.Raycast(ray, out var hit)) return;
         if (hit.transform.name != "Sphere") return;
-        var sphereClass = new SphereClass();
-        sphereClass = new SphereClass("Sphere");
+        var sphereClass = new SphereClass("Sphere")
+        {
+            Shape = "Sphere"
+        };
     }
 }

@@ -10,8 +10,9 @@ public class CubeClicker : MonoBehaviour
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         if (!Physics.Raycast(ray, out var hit)) return;
         if (hit.transform.name != "Cube") return;
-        var cubeClass = new CubeClass();
-        cubeClass = new CubeClass("Cube");
-        cubeClass.Shape = "Cube";
+        var cubeClass = new CubeClass("Cube")
+        {
+            Shape = "Cube"
+        };
     }
 }
