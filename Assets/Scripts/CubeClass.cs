@@ -1,3 +1,5 @@
+
+//INHERITANCE
 public class CubeClass : ShapeClass
 {
     public new string Shape { get; set; }

@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class Control : MonoBehaviour
 {
-    //public string newGameScene;
-    
     public void LoadScene()
     {
         SceneManager.LoadScene("Scenes/ShapesAliveScene");
@@ -22,7 +20,7 @@ public class Control : MonoBehaviour
     {
 #if UNITY_EDITOR         
         UnityEditor.EditorApplication.isPlaying = false;                
-#endif     
+#endif
         Application.Quit();
     }
 }
